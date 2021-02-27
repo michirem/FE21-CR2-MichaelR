@@ -16,6 +16,10 @@ body {
     margin: auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 // Header formatting
 
 header {
@@ -41,7 +45,6 @@ header {
                 margin-right: 8%;
                 margin-top: 2%;
                 a {
-                    text-decoration: none;
                     color: white;
                     font-size: 16pt;
                 }
@@ -241,7 +244,7 @@ footer {
             justify-content: flex-start;
             align-self: flex-end;
             ul {
-                width: 50%;
+                width: 60%;
                 li {
                    margin-right: 4%;
                    margin-left: 4%;
@@ -338,10 +341,11 @@ footer {
         ul {
             display: flex;
             justify-content: space-evenly;
-            margin-top: 4%;
+            margin-top: 5%;
+            margin-left: 5%;
                 li {
                     list-style-type: none;
-                    margin: 4%;
+                    margin: 2%;
                     a {
                         text-decoration: none;
                         color: white;
