@@ -58,8 +58,8 @@ header nav ul {
 
 header nav ul li {
   list-style-type: none;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
   margin-top: 2%;
 }
 
@@ -169,6 +169,163 @@ header nav ul li a {
   display: none;
 }
 
+.articlesection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+}
+
+.articlesection article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.articlesection h2 {
+  font-size: 300%;
+  padding: 10px;
+}
+
+.articlesection img {
+  width: 480px;
+  float: right;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.articlesection p {
+  font-size: 200%;
+  padding: 10px;
+}
+
+.articlesection hr {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.culturesection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.culturesection h2 {
+  font-size: 300%;
+  padding: 10px;
+}
+
+.eventtable {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.eventtable h3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.eventtable div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
+.techsection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: scroll;
+}
+
+.techsection article {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.techsection h2 {
+  font-size: 300%;
+  padding: 10px;
+}
+
+.techsection img {
+  width: 480px;
+  float: right;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.techsection p {
+  font-size: 200%;
+  padding: 10px;
+}
+
+.techsection hr {
+  width: 80%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.videosection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.videosection h2 {
+  font-size: 300%;
+  margin-bottom: 20px;
+}
+
+.videosection div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 120%;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -195,8 +352,8 @@ footer ul {
 
 footer ul li {
   list-style-type: none;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 6%;
+  margin-right: 6%;
   margin-top: 2%;
 }
 
@@ -302,7 +459,7 @@ footer div {
         align-self: flex-end;
   }
   header nav ul {
-    width: 60%;
+    width: 70%;
   }
   header nav ul li {
     margin-right: 4%;
