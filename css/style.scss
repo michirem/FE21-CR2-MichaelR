@@ -1,0 +1,362 @@
+// Default styling for mobile (480px screen)
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+// General formatting
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 480px;
+    margin: auto;
+}
+
+// Header formatting
+
+header {
+    background-color: rgb(92,25,27);
+    color: white;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    nav{
+        width: 100%;
+        height: 25%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+        display: flex;
+        justify-content: center;
+            li {
+                list-style-type: none;
+                margin-left: 8%;
+                margin-right: 8%;
+                margin-top: 2%;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16pt;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+    font-family: 'Anton', sans-serif;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    img {
+        width: 300px;
+        height: 65px;
+    }
+}
+
+// Not visible on mobile
+
+#banner1 {
+    display: none;
+}
+
+#currentdate {
+    display: none;
+}
+
+// main formatting for mobile
+
+.section1headerbar {
+    height: 140px;
+    display: flex;
+    align-items: center;
+    h1 {
+        background-color: rgb(185, 184, 184);
+        width: 100%;
+        height: 45px;
+        padding-top: 3%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 20pt;
+    }
+}
+.mobilearticle {
+    width: 80%;
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    object-fit: contain;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        max-width:100%;
+        max-height:80%;
+    }
+    div {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        h2 {
+            color: white;
+            font-size: 15pt;
+        }
+    }
+}
+
+//set margin for first and last article before headbar to 0 for symmetry
+
+.firstarticle {
+    margin-top: 0;
+}
+
+.lastarticle {
+    margin-bottom: 0;
+}
+
+//Not visible on mobile
+
+.banner_ad {
+    display: none;
+}
+
+//footer styling
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul {
+        display: flex;
+        justify-content: center;
+            li {
+                list-style-type: none;
+                margin-left: 8%;
+                margin-right: 8%;
+                margin-top: 2%;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 16pt;
+                }
+            }
+        }
+    .logo {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        order: -1;
+    }
+    div {
+        font-size: 12pt;
+        font-weight: lighter;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+//media query tablet
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .container {
+        width: 768px;
+        margin: auto;
+    }
+        #banner1 {
+            display: flex;
+        }
+
+    //display current date
+
+    #currentdate {
+        display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 30px;
+        color: black;
+    }
+
+    //main formatting
+
+    .mainsection1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .section1headerbar {
+        grid-column: 1 / 3;
+        width: 100%;
+    }
+
+    .section1article {
+       margin-top: 0;
+    }
+
+    .lastarticle {
+        grid-column: 1 / 3;
+        width: 90%;
+    }
+
+    .mainsection2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section2article {
+        margin-top: 10%;
+    }
+}
+
+//media query desktop
+
+@media screen and (min-width: 769px) {
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+
+    //header formatting
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+        nav {
+            grid-column: 1/3;
+            height: 60%;
+            justify-content: flex-start;
+            align-self: flex-end;
+            ul {
+                width: 50%;
+                li {
+                   margin-right: 4%;
+                   margin-left: 4%;
+                   margin-top: 0%;
+                    a{
+                        font-size: 20pt;
+                    }
+                }
+            }
+        }
+    }
+
+    #banner1 {
+        display: flex;
+        margin-top: 4%;
+    }
+
+    .logo {
+        margin-top: 4%;
+        margin-left: 7%;
+    }
+
+    //display current date
+
+    #currentdate {
+        display: flex;
+        height: 80px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-right: 30px;
+        color: black;
+    }
+
+    //main formatting
+
+    .mainsection1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    .section1headerbar {
+        grid-column: 1 / 4;
+        width: 100%;
+        text-align: left;
+        h1 {
+            padding-top: 2%;
+            padding-left: 3%;
+            text-align: left;
+        }
+    }
+
+    .section1article {
+       margin-top: 0;
+       margin-bottom: 0;
+       object-fit: cover;
+       img {
+        height: 167px;
+        width: 257px;
+       }
+    }
+
+    .banner_ad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        img {
+            width: 80%;
+        }
+    }
+
+    .mainsection2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+    }
+
+    .section2article {
+        margin-top: 40px;
+        margin-bottom: 0;
+        width: 87%;
+    }
+
+    //footer formatting
+
+    footer {
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 4%;
+                li {
+                    list-style-type: none;
+                    margin: 4%;
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 18pt;
+                    }
+                }
+            }
+        .logo {
+            justify-self: flex-end;
+            margin-right: 6%;
+            order: 0;
+        }
+        #footerinfo {
+            grid-column: 1/3;
+            text-align: center;
+        }
+    }
+}
